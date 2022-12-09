@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "3f907819-2e92-4e66-9272-08d8d1d0c0e6",
+		"name": "Python",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23338155"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"riri\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"neolexy\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/autho",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"autho"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU4NzU5MSwianRpIjoiOTIzNGIxOTctMjM5ZC00NTUyLThhYmEtMDQ4MzFiMTg5OWYxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5lb2xleHkiLCJuYmYiOjE2NzA1ODc1OTEsImV4cCI6MTY3MDU4ODQ5MX0.6JV5d6nFDN0qdiK3kOYI3lkMnEdfpO-msay_UruViaU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"begin_link\" : \"https://www.riotgames.com/ru\",\r\n    \"short_link\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/add_link",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add_link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU3OTI2OCwianRpIjoiYjE4Y2E2MTctNzAzMS00NTBmLWIwMmQtYjA5ZTYwMmI0Njc5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5hbWUyIiwibmJmIjoxNjcwNTc5MjY4LCJleHAiOjE2NzA1ODAxNjh9.6mwa_gF_nS9iizgJIecqbwCwRpS5FtIgsCQKzXmtBxE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\" : \"name2\",\r\n    \"short_link\" : \"e95034c8b615\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/del_link",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"del_link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change SL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU3OTc0NCwianRpIjoiOGU5NjkyNDEtNmVmZS00Y2M3LWI1NjgtNDA0NjRjNWZmOGE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5hbWUyIiwibmJmIjoxNjcwNTc5NzQ0LCJleHAiOjE2NzA1ODA2NDR9.dWsv40iPKsyfRcy6AbUaXGQ9v3XruCfpFJ-VAY_yfpY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_short_link\" : \"nononon\",\r\n    \"new_short_link\" : \"meowmeow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/change_short_link",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"change_short_link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change AL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU4ODMzMywianRpIjoiNjJmZDNiNmItNGQzOS00OWE3LWIxYjktZjMwMjdmMDZiZjBiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5lb2xleHkiLCJuYmYiOjE2NzA1ODgzMzMsImV4cCI6MTY3MDU4OTIzM30.qy7vtXPIOKL1qYULn86CoEOKk3pOYDfs9H3-spqPXFE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_link\" : \"9d6004fd88e\",\r\n    \"access\" : \"private\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/change_access_link",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"change_access_link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Click L",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_link\" : \"24fc1700d6c8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/<short>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"<short>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Your Links",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU4ODAxOCwianRpIjoiM2ZmYTA3N2ItNWU4Yy00MGE3LTk4NzEtYmEyMDI3ODQwZDE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5lb2xleHkiLCJuYmYiOjE2NzA1ODgwMTgsImV4cCI6MTY3MDU4ODkxOH0.oz36fpZ0VqouWWMm4UmYUKpXPax9V1htdoEKlTHkpxY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_your_links",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_your_links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Link User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MDU5MDc1NCwianRpIjoiMDU4NjE0ODYtMWQwNi00ZGVkLWIzYTctZWRhNTllNzM2OWM1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im5lb2xleHkiLCJuYmYiOjE2NzA1OTA3NTQsImV4cCI6MTY3MDU5MTY1NH0.X0_VaztNEeFnnSNpxQP9lhKL8yZ77ee0y4dcotnLp3w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_link\" : \"210638c83c7f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_link_user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_link_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_link\" : \"210638c83c7f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_link",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_link"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
